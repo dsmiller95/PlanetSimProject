@@ -7,7 +7,23 @@ First get set up with processing and open the starter template. Then, work throu
 These tasks will become harder, and at some point you will need to change how the code is structured in order to manage the growing complexity. It is up to you to decide when you want to make these changes, based on the immediate cost of the changes and the potential future savings of making the change.
 
 
-## Getting started
+- [Getting started](#getting-started)
+  - [Starter template](#starter-template)
+- [Tasks](#tasks)
+  - [1 More planetary bodies](#1-more-planetary-bodies)
+  - [2 Edge interaction](#2-edge-interaction)
+  - [3 Increasing numbers](#3-increasing-numbers)
+  - [4 Planetary Inflation](#4-planetary-inflation)
+  - [5 Collision](#5-collision)
+  - [6 Getting Colorful](#6-getting-colorful)
+  - [7 Hands On [Extra Credit]](#7-hands-on-extra-credit)
+  - [8 Simulation speed [Extra Credit]](#8-simulation-speed-extra-credit)
+- [Reference resources](#reference-resources)
+  - [Array and ArrayList](#array-and-arraylist)
+  - [Class](#class)
+  - [HashMap](#hashmap)
+
+# Getting started
 
 This project uses Processing. [Download processing from the processing website](https://processing.org/download).
 
@@ -16,10 +32,11 @@ Download the code for the repository using your preferred method, either downloa
 git clone https://github.com/dsmiller95/PlanetSimProject.git
 ```
 
-Pick whether you want to use Python or Java, and open the corresponding .pde project.
-Currently, only Java has a starting template.
+If you clone via git, I recommend committing your changes after completing each step. This will make it possible to look back through your change history. Which you may find useful if you notice suddenly the project no longer works, and you don't know what change caused it!
 
-## The starter template
+Open the planet_sim_template_starter.pde file to get started.
+
+## Starter template
 
 The starter template will contain a simple 2d simulation of two bodies, acting on each other using a pseudo-gravitational force. This code is written in a way that would be pretty awkward to expand to 3, 8, or N bodies. However, this code should contain all the system calls we need to actually render the most basic form of this simulation.
 
@@ -54,7 +71,7 @@ The second task is to keep the planetary bodies constrained inside the screen. D
 Next, we will slowly increase the number of planetary bodies. Every 2 seconds, add a new planetary body at a position with a velocity. I suggest making these random, to keep things interesting. Increase the number of planetary bodies up to a maximum of 30 total planetary bodies.
 
 
-## 4 Varying mass
+## 4 Planetary Inflation
 
 To add some variety, we will now vary how much mass every planetary body will have. When creating a new body, pick a random mass inside some range. The radii of a planetary body will be some function of its mass, proportional to sqrt(mass) or cube_root(mass). This mass will affect how gravity pulls between all of the planetary bodies.
 
@@ -64,12 +81,12 @@ To add some variety, we will now vary how much mass every planetary body will ha
 This step will introduce an additional interaction between the planetary bodies. Whenever any two of our planetary bodies intersect with each other, we will merge them into one planetary body. This will involve comparing the distance between two bodies with the sum of their radii, to detect a collision. The merged planetary body will have a mass which is equal to the sum of the colliding bodies' masses, and the same momentum as both colliding masses.
 
 
-## 6 Unique Color
+## 6 Getting Colorful
 
 Similar to [varying mass](#4-varying-mass), this will add a unique Color to every planetary body. They should draw with this color, and when merging, their colors should be combined or averaged in some way.
 
 
-## 7 Manually placing planet [Extra Credit]
+## 7 Hands On [Extra Credit]
 
 Add a user interaction which allows you to place a new planet of some varied size, and a specified velocity. There are many ways to do this. One possible way is to have the mass set by how long the mouse is held down. And the velocity set by the distance the mouse has dragged while being held down.
 
@@ -81,9 +98,9 @@ Add a variable to the processing project which will change the speed of the simu
 - run the velocity, force, accelerate, calculations more than once every frame
 
 
-# Java Reference resources
+# Reference resources
 
-These are references for Java that could be useful to you as you look for ways to make the above changes easier, and how to shape the code to make them more doable. This is not a complete list, it is meant as a jumping off point.
+These are references that could be useful to you as you look for ways to make the above changes easier, and how to shape the code to make them more doable. This is not a complete list, it is meant as a jumping off point.
 
 ## Array and ArrayList
 
