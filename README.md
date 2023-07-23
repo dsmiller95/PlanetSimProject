@@ -11,6 +11,11 @@ These tasks will become harder, and at some point you will need to change how th
 
 This project uses Processing. [Download processing from the processing website](https://processing.org/download).
 
+Download the code for the repository using your preferred method, either downloading as a zip package, or clone via git:
+```
+git clone https://github.com/dsmiller95/PlanetSimProject.git
+```
+
 Pick whether you want to use Python or Java, and open the corresponding .pde project.
 Currently, only Java has a starting template.
 
@@ -21,7 +26,7 @@ The starter template will contain a simple 2d simulation of two bodies, acting o
 This is what you should see on successfully running the starter template:
 
 
-![Planet template animation](./resources/PlanetTemplateStart.mp4)
+![Planet template animation](./resources/PlanetTemplateStart.gif)
 
 # Tasks 
 
