@@ -81,9 +81,9 @@ Add a variable to the processing project which will change the speed of the simu
 - run the velocity, force, accelerate, calculations more than once every frame
 
 
-# Reference resources
+# Java Reference resources
 
-These are references that could be useful to you as you look for ways to make the above changes easier, and how to shape the code to make them more doable. This is not a complete list, it is meant as a jumping off point.
+These are references for Java that could be useful to you as you look for ways to make the above changes easier, and how to shape the code to make them more doable. This is not a complete list, it is meant as a jumping off point.
 
 ## Array and ArrayList
 
