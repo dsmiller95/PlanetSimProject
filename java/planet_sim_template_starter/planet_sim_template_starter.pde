@@ -27,7 +27,6 @@ void setup() {
 void draw() {
   background(0);
   
-
   circle(planetAPosition.x, planetAPosition.y, 10);
   circle(planetBPosition.x, planetBPosition.y, 10);
   
