@@ -18,6 +18,10 @@ Currently, only Java has a starting template.
 
 The starter template will contain a simple 2d simulation of two bodies, acting on each other using a pseudo-gravitational force. This code is written in a way that would be pretty awkward to expand to 3, 8, or N bodies. However, this code should contain all the system calls we need to actually render the most basic form of this simulation.
 
+This is what you should see on successfully running the starter template:
+
+
+![Planet template animation](./resources/PlanetTemplateStart.mp4)
 
 # Tasks 
 
