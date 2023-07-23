@@ -72,3 +72,37 @@ Similar to [varying mass](#4-varying-mass), this will add a unique Color to ever
 ## 7 Manually placing planet [Extra Credit]
 
 Add a user interaction which allows you to place a new planet of some varied size, and a specified velocity. There are many ways to do this. One possible way is to have the mass set by how long the mouse is held down. And the velocity set by the distance the mouse has dragged while being held down.
+
+## 8 Simulation speed [Extra Credit]
+
+Add a variable to the processing project which will change the speed of the simulation. There are several ways to implement this, following are a couple options:
+
+- multiply all velocities by a specific scalar
+- run the velocity, force, accelerate, calculations more than once every frame
+
+
+# Reference resources
+
+These are references that could be useful to you as you look for ways to make the above changes easier, and how to shape the code to make them more doable. This is not a complete list, it is meant as a jumping off point.
+
+## Array and ArrayList
+
+These can be used to store data in a sequential format. Array is of fixed size, ArrayList is allowed to vary in size.
+
+Array will require a size to be provided on startup, and will remain that size for its lifetime. To get a larger array, a new array must be created. Arrays are easy to iterate over. [See Array reference on processing.org](https://processing.org/reference/Array.html)
+
+ArrayList will not require a size on startup, and will expose methods like `.add(item)`, `.remove(item)`, `.remove(int index)`, or `insert(int index, item)` . ArrayLists are easy to iterate over. [See ArrayList reference on processing.org](https://processing.org/reference/ArrayList.html)
+
+## Class
+
+A Class is the most base way to represent a set of related data and functions in java. Classes are very useful when you have some data which you always refer to together, and often also have functions which operate on this data. Putting data and functions together into a class can make the functionality much easier to reason about, and write code around, without worrying about the underlying implementation.
+
+For example, one might use a Class to represent a Triangle. The class would store the coordinates for the three vertexes of the triangle, and a `draw()` function on the class would allow external code to cause the triangle to be drawn to the screen based on its coordinates.
+
+See [class reference on processing.org](https://processing.org/reference/class.html)
+
+## HashMap
+
+A HashMap (similar to the Dictionary in some other languages) stores a set of values, indexed by strings. This is useful if you want to store a mapping of objects in no particular order, with relatively performant lookup based on a specified arbitrary key.
+
+See [HashMap reference on processing.org](https://processing.org/reference/HashMap.html)
